@@ -4,6 +4,7 @@
 [![Build Status](https://travis-ci.com/TestowanieJAVA2017-2018Gr2/projekt2-mbarzowska.svg?token=MLmphE29pAzYDQb7WTRW&branch=master)](https://travis-ci.com/TestowanieJAVA2017-2018Gr2/projekt2-mbarzowska)
 [![Maintainability](https://api.codeclimate.com/v1/badges/eec4021dbe205c17825c/maintainability)](https://codeclimate.com/repos/5ae9ab625a467d0272006a52/maintainability)
 ![CodeCov](https://codecov.io/gh/TestowanieJAVA2017-2018Gr2/projekt2-mbarzowska/branch/master/graph/badge.svg)
+[![BCH compliance](https://bettercodehub.com/edge/badge/mbarzowska/projekt2-bettercodehub?branch=master)](https://bettercodehub.com/)
 
 ### Ważne informacje wyodrębnione z pierwotnego README.md z instrukcjami 
 -----------------------
