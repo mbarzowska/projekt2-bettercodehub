@@ -128,40 +128,16 @@ public class BoardCafe {
     }
 
     public boolean UserBookGame(User user, String gameName, String sDate, String sTime) throws ParseException, IOException {
-        if (gameName == null || gameName.isEmpty()) {
-            throw new IllegalArgumentException("Wrong input!\nGame name is an empty string!");
-        }
+        _validator.ValidateGameName(gameName);
 
         Game game = _gameRepository.GetGame(gameName);
         if (game == null) {
             throw new UnsupportedOperationException("This game does not exist in our database!");
         }
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        LocalDate date = LocalDate.parse(sDate, formatter);
+        LocalDate date = _validator.ValidateBookingDate(game, sDate);
 
-        if (transformDaysToWords(game.getDays()).contains(date.getDayOfWeek().toString())) {
-            throw new UnsupportedOperationException("You can't book a game for a date it's not available to book, sorry!");
-        }
-
-        int time;
-
-        try {
-            time = Integer.parseInt(sTime);
-        } catch (Exception ex) {
-            System.out.println("Invalid data! Please make sure given time is a number!");
-            return false;
-        }
-
-        if (time < game.getAvailableHoursStart() || time >= game.getAvailableHoursEnd()) {
-            throw new UnsupportedOperationException("You can't book a game for a time period when we're closed, sorry!");
-        }
-
-        if (time >= game.getAvailableHoursStart() && time < game.getAvailableHoursEnd()) {
-            if (time >= game.getUnavailableHoursStart() && time < game.getUnavailableHoursEnd()) {
-                throw new UnsupportedOperationException("You can't book a game for a time period when it's not available to book, sorry!");
-            }
-        }
+        int time = _validator.ValidateBookingTime(game, sTime);
 
         if (_loggedUserRepository.UserExists(user.getUsername())) {
             User loggedUser = _loggedUserRepository.GetUser(user.getUsername());
@@ -239,7 +215,7 @@ public class BoardCafe {
         return true;
     }
 
-    private static String transformDaysToWords(boolean[] table) {
+    /*private static String transformDaysToWords(boolean[] table) {
         String[] daysInWords = {"MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"};
         StringBuilder wordedDaysBuilder = new StringBuilder();
         for (int i = 0; i < table.length; i++) {
@@ -251,7 +227,7 @@ public class BoardCafe {
         }
         String wordedDays = wordedDaysBuilder.toString();
         return wordedDays;
-    }
+    }*/
 
     public String ShowGamesList() {
         StringBuilder gamesListBuilder = new StringBuilder();
@@ -265,7 +241,7 @@ public class BoardCafe {
             gamesListBuilder.append("Name: " + item.getName()
                     + " | price: " + item.getPrice()
                     + " | hours: from " + item.getAvailableHoursStart() + " 'till " + item.getAvailableHoursEnd()
-                    + " | unavailable: " + transformDaysToWords(item.getDays())
+                    + " | unavailable: " + _validator.transformDaysToWords(item.getDays())
                     + "| unavailable hours: from " + item.getUnavailableHoursStart() + " 'till " + item.getUnavailableHoursEnd() + "\n");
         }
 

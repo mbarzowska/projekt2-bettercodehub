@@ -73,7 +73,7 @@ public class App {
                 }
             } else {
                 System.out.println("\nCURRENTLY LOGGED IN AS " + user.getUsername() + "\n");
-                System.out.println("Menu\n0. our games list\n1. Your games list\n2. Book a game\n3. Add money\n4. Log out\nQ. Quit\n");
+                System.out.println("Menu\n0. Our games list\n1. Your games list\n2. Book a game\n3. Add money\n4. Log out\nQ. Quit\n");
                 System.out.println("What would you want to do?");
                 input = scanner.nextLine();
 
@@ -86,7 +86,7 @@ public class App {
                         bc.ShowUsersBookedGamesList(user.getUsername());
                         break;
                     case ("2"):
-                        System.out.println("Available games:"); bc.ShowGamesList();
+                        System.out.println("Available games:"); System.out.println(bc.ShowGamesList());
                         System.out.println("What would you want to book? Please enter a name:"); gameName = scanner.nextLine();
                         try {
                             if (bc.GameExists(gameName)) {
