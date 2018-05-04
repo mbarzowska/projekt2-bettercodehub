@@ -1,7 +1,7 @@
-package Projekt2.Repos;
+package Project2.Repos.ListDependent;
 
-import Projekt2.Models.User;
-import Projekt2.Repos.Interfaces.ILoggedUser;
+import Project2.Models.User;
+import Project2.Repos.Interfaces.ILoggedUser;
 
 import java.util.ArrayList;
 import java.util.List;

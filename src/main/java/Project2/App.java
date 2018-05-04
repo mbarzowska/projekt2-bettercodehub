@@ -1,14 +1,14 @@
-package Projekt2;
+package Project2;
 
 
 
-import Projekt2.Controllers.BoardCafe;
-import Projekt2.Models.Validator;
-import Projekt2.Models.User;
-import Projekt2.Repos.BookedGameRepository;
-import Projekt2.Repos.GameRepository;
-import Projekt2.Repos.LoggedUserRepository;
-import Projekt2.Repos.UserRepository;
+import Project2.Controllers.BoardCafe;
+import Project2.Models.Validator;
+import Project2.Models.User;
+import Project2.Repos.ListDependent.BookedGameRepository;
+import Project2.Repos.ListDependent.GameRepository;
+import Project2.Repos.ListDependent.LoggedUserRepository;
+import Project2.Repos.ListDependent.UserRepository;
 
 import java.io.IOException;
 import java.text.ParseException;

@@ -1,13 +1,13 @@
-package Projekt2.Controllers;
+package Project2.Controllers;
 
-import Projekt2.Models.BookedGame;
-import Projekt2.Models.Game;
-import Projekt2.Models.Interfaces.IValidator;
-import Projekt2.Models.User;
-import Projekt2.Repos.Interfaces.IBookedGame;
-import Projekt2.Repos.Interfaces.IGame;
-import Projekt2.Repos.Interfaces.ILoggedUser;
-import Projekt2.Repos.Interfaces.IUser;
+import Project2.Models.BookedGame;
+import Project2.Models.Game;
+import Project2.Models.Interfaces.IValidator;
+import Project2.Models.User;
+import Project2.Repos.Interfaces.IBookedGame;
+import Project2.Repos.Interfaces.IGame;
+import Project2.Repos.Interfaces.ILoggedUser;
+import Project2.Repos.Interfaces.IUser;
 
 import java.io.File;
 import java.io.FileNotFoundException;

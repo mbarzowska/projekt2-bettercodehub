@@ -1,15 +1,15 @@
-package Projekt2.Models;
+package Project2.Models;
 
 import java.time.LocalDate;
 
 public class BookedGame {
     private String Username;
-    private Projekt2.Models.Game Game;
+    private Project2.Models.Game Game;
     private LocalDate Date;
     private int Time;
     private String BookingID;
 
-    public BookedGame(String username, Projekt2.Models.Game game, LocalDate date, int time, String bookingID) {
+    public BookedGame(String username, Project2.Models.Game game, LocalDate date, int time, String bookingID) {
         this.Username = username;
         this.Game = game;
         this.Date = date;
@@ -22,7 +22,7 @@ public class BookedGame {
         return Username;
     }
 
-    public Projekt2.Models.Game getGame() {
+    public Project2.Models.Game getGame() {
         return Game;
     }
 

@@ -1,12 +1,12 @@
-package Projekt2;
+package Project2;
 
-import Projekt2.Controllers.BoardCafe;
-import Projekt2.Models.Interfaces.IValidator;
-import Projekt2.Models.User;
-import Projekt2.Repos.Interfaces.IBookedGame;
-import Projekt2.Repos.Interfaces.IGame;
-import Projekt2.Repos.Interfaces.ILoggedUser;
-import Projekt2.Repos.Interfaces.IUser;
+import Project2.Controllers.BoardCafe;
+import Project2.Models.Interfaces.IValidator;
+import Project2.Models.User;
+import Project2.Repos.Interfaces.IBookedGame;
+import Project2.Repos.Interfaces.IGame;
+import Project2.Repos.Interfaces.ILoggedUser;
+import Project2.Repos.Interfaces.IUser;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,7 +15,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import Projekt2.Extensions.EasyMockExtension;
+import Project2.Extensions.EasyMockExtension;
 import org.easymock.EasyMock;
 import static org.easymock.EasyMock.expect;
 import static org.easymock.EasyMock.replay;

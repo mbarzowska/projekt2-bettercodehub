@@ -1,4 +1,4 @@
-package Projekt2.Extensions;
+package Project2.Extensions;
 
 /* https://stackoverflow.com/a/47243856 */
 import org.easymock.EasyMockSupport;

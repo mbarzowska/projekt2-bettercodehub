@@ -1,4 +1,4 @@
-package Projekt2.Models.Interfaces;
+package Project2.Models.Interfaces;
 
 public interface IValidator {
     boolean ValidateUser(String username, String password);

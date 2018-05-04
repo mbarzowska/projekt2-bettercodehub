@@ -1,7 +1,7 @@
-package Projekt2.Repos;
+package Project2.Repos.ListDependent;
 
-import Projekt2.Models.Game;
-import Projekt2.Repos.Interfaces.IGame;
+import Project2.Models.Game;
+import Project2.Repos.Interfaces.IGame;
 
 import java.util.ArrayList;
 import java.util.List;

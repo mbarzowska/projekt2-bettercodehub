@@ -1,4 +1,4 @@
-package Projekt2.Models;
+package Project2.Models;
 
 public class Game {
     private String Name;

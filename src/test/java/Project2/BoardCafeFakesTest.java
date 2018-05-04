@@ -1,18 +1,18 @@
-package Projekt2;
+package Project2;
 
-import Projekt2.Controllers.BoardCafe;
-import Projekt2.Models.Game;
-import Projekt2.Models.Interfaces.IValidator;
-import Projekt2.Models.Validator;
-import Projekt2.Models.User;
-import Projekt2.Repos.BookedGameRepository;
-import Projekt2.Repos.GameRepository;
-import Projekt2.Repos.Interfaces.IBookedGame;
-import Projekt2.Repos.Interfaces.IGame;
-import Projekt2.Repos.Interfaces.ILoggedUser;
-import Projekt2.Repos.Interfaces.IUser;
-import Projekt2.Repos.LoggedUserRepository;
-import Projekt2.Repos.UserRepository;
+import Project2.Controllers.BoardCafe;
+import Project2.Models.Game;
+import Project2.Models.Interfaces.IValidator;
+import Project2.Models.Validator;
+import Project2.Models.User;
+import Project2.Repos.ListDependent.BookedGameRepository;
+import Project2.Repos.ListDependent.GameRepository;
+import Project2.Repos.Interfaces.IBookedGame;
+import Project2.Repos.Interfaces.IGame;
+import Project2.Repos.Interfaces.ILoggedUser;
+import Project2.Repos.Interfaces.IUser;
+import Project2.Repos.ListDependent.LoggedUserRepository;
+import Project2.Repos.ListDependent.UserRepository;
 
 import java.io.File;
 import java.io.IOException;

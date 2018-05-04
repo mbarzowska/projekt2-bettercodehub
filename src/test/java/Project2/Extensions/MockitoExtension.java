@@ -1,4 +1,4 @@
-package Projekt2.Extensions;
+package Project2.Extensions;
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestInstancePostProcessor;

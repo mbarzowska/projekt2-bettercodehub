@@ -1,10 +1,6 @@
-package Projekt2.Models;
+package Project2.Models;
 
-import Projekt2.Models.Game;
-import Projekt2.Models.Interfaces.IValidator;
-
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import Project2.Models.Interfaces.IValidator;
 
 public class Validator implements IValidator {
     public boolean ValidateUser(String username, String password) {

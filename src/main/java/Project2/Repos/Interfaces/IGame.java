@@ -1,6 +1,6 @@
-package Projekt2.Repos.Interfaces;
+package Project2.Repos.Interfaces;
 
-import Projekt2.Models.Game;
+import Project2.Models.Game;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package Projekt2.Repos;
+package Project2.Repos.ListDependent;
 
-import Projekt2.Models.BookedGame;
-import Projekt2.Repos.Interfaces.IBookedGame;
+import Project2.Models.BookedGame;
+import Project2.Repos.Interfaces.IBookedGame;
 
 import java.util.ArrayList;
 import java.util.List;
